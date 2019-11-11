@@ -26,7 +26,7 @@ int getRingbufferAverage(ringbufferAveraging_t * _ringbufferAveraging)
 	int approximation = 0;
 	for(int i = 0; i < _ringbufferAveraging->bufferSize; i++)
 	{
-		approximation = +_ringbufferAveraging->values[i];
+		approximation += _ringbufferAveraging->values[i];
 	}
 	//shifting instead of div to be faster!!
 	approximation = approximation >> bufferSizeShift;
