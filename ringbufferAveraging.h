@@ -8,7 +8,7 @@
 
 #ifndef RINGBUFFERAVERAGING_H_
 #define RINGBUFFERAVERAGING_H_
-#define bufferSizeShift 6
+#define bufferSizeShift 5
 
 typedef struct _approximation_t ringbufferAveraging_t;
 
